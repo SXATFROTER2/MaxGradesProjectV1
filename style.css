@@ -1,0 +1,66 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    animation: flash 0.5s infinite;
+}
+
+li{
+    color: aliceblue;
+    display: flex;
+    justify-content: end;
+}
+
+
+
+
+.container{
+display: flex;
+flex-direction: column;
+margin-left: 0%;
+
+}
+
+@keyframes flash {
+    0% {
+        color: red;
+    }
+    25% {
+        color: azure;
+    }
+    50% {
+        color: red;
+    }
+    75% {
+        color: azure;
+    }
+    100% {
+        color: red;
+    }
+}
+@keyframes flashBG {
+    0% {
+        background-color: black;
+    }
+    25% {
+        background-color: red;
+    }
+    50% {
+        background-color: black;
+    }
+    75% {
+        background-color: red;
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+body {
+    animation: flashBG 0.5s infinite;
+}
